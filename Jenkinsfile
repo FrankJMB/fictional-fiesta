@@ -11,7 +11,7 @@ pipeline {
       steps {
         dir(path: 'ttt') {
           echo 'Print Message 1'
-          pwd()
+          pwd(tmp: true)
         }
 
       }
