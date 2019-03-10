@@ -10,7 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'cd /root'
-        dir(path: 't6') {
+        dir(path: './t6') {
           echo 'Print Message 1'
           sh 'npm init -f'
           input 'Finished using the web site? (Click "Proceed" to continue)'
