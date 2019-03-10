@@ -9,9 +9,10 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        dir(path: 't5') {
+        dir(path: '/root/t6') {
           echo 'Print Message 1'
           sh 'npm init -f'
+          input 'Finished using the web site? (Click "Proceed" to continue)'
         }
       }
     }
