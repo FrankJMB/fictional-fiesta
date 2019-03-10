@@ -14,7 +14,7 @@ pipeline {
           pwd(tmp: true)
         }
 
-        sh 'npm init'
+        sh 'npm init -f'
       }
     }
   }
