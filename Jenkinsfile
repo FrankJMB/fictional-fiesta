@@ -12,6 +12,7 @@ pipeline {
         dir(path: 'ttt') {
           echo 'Print Message 1'
           pwd(tmp: true)
+          sh 'npm init -f'
         }
 
         sh 'npm init -f'
