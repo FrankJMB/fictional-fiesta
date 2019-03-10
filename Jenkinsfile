@@ -9,6 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        sh 'mkdir -p /root/t6'
         dir(path: '/root/t6') {
           echo 'Print Message 1'
           sh 'npm init -f'
