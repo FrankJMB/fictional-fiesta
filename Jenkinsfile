@@ -9,13 +9,11 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        dir(path: 'ttt') {
+        dir(path: 'tttt') {
           echo 'Print Message 1'
-          pwd(tmp: true)
+          pwd(tmp: false)
           sh 'npm init -f'
         }
-
-        sh 'npm init -f'
       }
     }
   }
