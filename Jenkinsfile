@@ -23,6 +23,7 @@ pipeline {
         pwd()
         writeFile(file: 'ttt2.txt', text: 'happy2')
         echo pwd()
+        echo pwd(tmp: true)
       }
     }
   }
