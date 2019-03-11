@@ -13,6 +13,7 @@ pipeline {
         dir(path: './t6') {
           echo 'Print Message 1'
           echo pwd()
+          echo pwd(tmp: true)
           sh 'npm init -f'
           input 'Finished using the web site? (Click "Proceed" to continue)'
         }
