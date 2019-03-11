@@ -18,6 +18,8 @@ pipeline {
 
         sh 'TTT="${PWD}"'
         sh 'echo "${TTT}"'
+        pwd(tmp: true)
+        writeFile(file: 'ttt.txt', text: 'happy')
       }
     }
   }
