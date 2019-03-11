@@ -16,8 +16,8 @@ pipeline {
           input 'Finished using the web site? (Click "Proceed" to continue)'
         }
 
-        pwd(tmp: true)
-        sh 'echo pwd'
+        def TTT=pwd(tmp: true)
+        sh 'echo "${TTT}"'
       }
     }
   }
