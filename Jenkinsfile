@@ -17,7 +17,7 @@ pipeline {
         }
 
         pwd(tmp: true)
-        sh 'echo pwd()'
+        sh 'echo pwd'
       }
     }
   }
