@@ -15,6 +15,8 @@ pipeline {
           sh 'npm init -f'
           input 'Finished using the web site? (Click "Proceed" to continue)'
         }
+
+        pwd(tmp: true)
       }
     }
   }
