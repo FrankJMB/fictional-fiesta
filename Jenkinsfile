@@ -21,6 +21,7 @@ pipeline {
         pwd(tmp: true)
         writeFile(file: 'ttt.txt', text: 'happy')
         pwd()
+        writeFile(file: 'ttt2.txt', text: 'happy2')
       }
     }
   }
