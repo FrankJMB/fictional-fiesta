@@ -16,7 +16,7 @@ pipeline {
           input 'Finished using the web site? (Click "Proceed" to continue)'
         }
 
-        sh 'SET TTT=pwd'
+        sh 'TTT=pwd'
         sh 'echo "${TTT}"'
       }
     }
